@@ -71,14 +71,14 @@ body {
     width: 284px;
     margin-bottom: 25px;
 }
-.header-content__btn {
+.button {
     display: inline-block;
     border: 1px solid #ffffff;
     padding: 30px 62px;
     background: rgba(255, 255, 255, 0.15);
     transition: all .5s;
 }
-.header-content__btn:hover{
+.button:hover{
     background-color: #770302;
 }
 
@@ -193,12 +193,6 @@ body {
     width: 100%;
 }
 
-.advantages__title--bottom {
-    right: 0;
-    bottom: 0;
-    top: auto;
-}
-
 .design__images {
     margin-bottom: 100px;
 }
@@ -206,11 +200,15 @@ body {
 .design-row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .design-row__item {
     max-width: 570px;
     width: 100%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .design-row__item-num {
@@ -218,14 +216,36 @@ body {
 }
 
 .design-row__item-text {
-    max-width: 450px;
+    max-width: 430px;
+    padding-top: 30px;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
     background: #690102;
+    padding: 83px 0 20px;
+}
+.footer-btn {
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.footer-copy {
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer-copy ul{
+    list-style: none;
+}
+
+.footer-copy li{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.footer-copy li + li::before{
+    content: "|";
+    position: absolute;
+    left: -5px;
 }
